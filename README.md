@@ -1,4 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Task List
+This project is a React implementation of the Task List in Brad Traversy's Modern JavaScript course.
 
 ## Available Scripts
 
