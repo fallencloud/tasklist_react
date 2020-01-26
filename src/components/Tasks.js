@@ -28,6 +28,10 @@ class Tasks extends Component {
     }
   };
 
+  deleteClick = task => {
+    this.props.deleteTask(task);
+  };
+
   onClick = e => {
     this.props.clearTasks();
   };
@@ -63,11 +67,15 @@ class Tasks extends Component {
                   <label htmlFor="filter">Filter Tasks</label>
                 </div>
                 {items.map(task => (
-                  <Task key={task.id.toString()} task={task} />
+                  <Task
+                    key={task.id}
+                    task={task}
+                    deleteTask={this.deleteClick}
+                  />
                 ))}
                 <a
                   href="#"
-                  class="clear-tasks btn black"
+                  className="clear-tasks btn black"
                   onClick={this.onClick}
                 >
                   Clear Tasks

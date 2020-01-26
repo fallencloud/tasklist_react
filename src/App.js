@@ -12,6 +12,13 @@ class App extends Component {
     });
   };
 
+  deleteTask = task => {
+    console.log(task);
+    this.setState({
+      items: [...this.state.items.filter(item => item.id !== task)]
+    });
+  };
+
   clearTasks = () => {
     this.setState({
       items: []
@@ -26,6 +33,7 @@ class App extends Component {
           items={this.state.items}
           addTask={this.addTask}
           clearTasks={this.clearTasks}
+          deleteTask={this.deleteTask}
         />
       </Fragment>
     );

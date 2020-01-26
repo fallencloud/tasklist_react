@@ -10,3 +10,4 @@ This project is a React implementation of the Task List in Brad Traversy's Moder
 4. Add app level state
 5. Created ADD TASK
 6. Created CLEAR TASKS functionality
+7. Created DELETE TASK functionality
